@@ -97,7 +97,7 @@ const Beneficiary = () => {
               p="1.5em"
               boxShadow="lg"
               my="1em"
-              placeholder="How can we help you?"
+              placeholder="How can Hardball Foundation support you?"
               resize="none"
               minH="200px"
             />

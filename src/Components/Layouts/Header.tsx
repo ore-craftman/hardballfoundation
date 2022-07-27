@@ -80,7 +80,11 @@ export const Header = ({
             })}
           </Flex>
 
-          <Link to="/beneficiary">
+          <a
+            href="https://paystack.com/pay/hardballfoundation"
+            target="_blank"
+            rel="noreffer"
+          >
             <Button
               colorScheme="red"
               variant="outline"
@@ -88,9 +92,9 @@ export const Header = ({
               borderColor="#ED2123"
               my={["0.4em", "0em"]}
             >
-              Become a beneficiary
+              Donate
             </Button>
-          </Link>
+          </a>
         </Stack>
 
         <IconButton

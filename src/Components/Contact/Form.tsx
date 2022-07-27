@@ -9,7 +9,6 @@ import {
   Textarea,
   Button,
 } from "@chakra-ui/react";
-import { useState } from "react";
 
 export const ContactForm = () => {
   return (
@@ -23,7 +22,9 @@ export const ContactForm = () => {
         >
           <Box width={["100%", "48%", "35%"]}>
             <Heading>Contact Us</Heading>
-            <Text>Any questions or remarks? Just write us a message.</Text>
+            <Text>
+              Want to find out more about us? Just leave us a message here.
+            </Text>
             <form action="https://formspree.io/f/mayvrlog" method="POST">
               <Input
                 placeholder="Email Address"

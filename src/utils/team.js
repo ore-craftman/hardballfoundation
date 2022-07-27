@@ -25,9 +25,9 @@ export const team = [
     name: "Adekoye Gbadebo",
     role: "Media & Commmunications",
   },
-  {
-    image: `${IMG_BASE}/blessing.svg`,
-    name: "Blessing Enetomhe",
-    role: "Monitoring & Evaluation",
-  },
+  // {
+  //   image: `${IMG_BASE}/blessing.svg`,
+  //   name: "Blessing Enetomhe",
+  //   role: "Monitoring & Evaluation",
+  // },
 ];

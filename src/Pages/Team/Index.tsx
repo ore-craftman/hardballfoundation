@@ -4,7 +4,7 @@ import { ScrollTrigger, Tween } from "react-gsap";
 import { Layout } from "../../Components/Layouts/Index";
 import { team } from "../../utils/team";
 
-const About = () => {
+const Team = () => {
   const contactRefInstance = useRef(null);
 
   return (
@@ -136,4 +136,4 @@ const About = () => {
   );
 };
 
-export default About;
+export default Team;

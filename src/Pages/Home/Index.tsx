@@ -49,7 +49,7 @@ const Home = () => {
                     mb="1.5em"
                   >
                     Building sustainable livelihoods for{" "}
-                    <span style={{ color: "#ED2123" }}>African Youths</span>
+                    <span style={{ color: "#ED2123" }}>African Youths.</span>
                   </Heading>
 
                   <Box
@@ -105,10 +105,11 @@ const Home = () => {
                   sustainable livelihoods to reduce economic inequalities
                   through decent work.
                 </Text>
-
-                <Heading fontSize="1.2em" fontWeight="medium" mt="3em">
-                  We achieve this in 3 ways:
-                </Heading>
+                <Text mx="auto" w={["98%", "90%", "55%"]} mt="0.5em">
+                  Our strategy for building sustainable livelihoods is captured
+                  in a three-pronged approach for impact-driven project
+                  implementation
+                </Text>
 
                 <Flex
                   my="3em"
@@ -163,19 +164,19 @@ const Home = () => {
                     <Heading color="#ED2123">Our Vision</Heading>
                     <Text>
                       Building sustainable livelihoods to reduce economic
-                      inequalities. Our programmes and initiatives are in line
-                      with the United Nations Sustainable Development Goal (SDG)
-                      8 which is to promote sustained inclusive and sustainable
-                      economic growth, full and productive employment and decent
-                      work for all.
+                      inequalities. <br /> Our programmes and initiatives are in
+                      line with the United Nations Sustainable Development Goal
+                      Eight (SDG8) which is to promote sustained, inclusive and
+                      sustainable economic growth, full and productive
+                      employment and decent work for all.
                     </Text>
                   </Box>
                   <Box width={["100%", "48%", "30%"]} textAlign="right">
                     <Heading color="#ED2123">Our Mission</Heading>
                     <Text>
-                      To transform the lives of 10,000 beneficiaries, providing
-                      access to training and funding to build a sustainable
-                      income by 2032.
+                      To transform the lives and livelihoods of 10,000
+                      beneficiaries by 2032, through providing access to
+                      training and funding to build a sustainable income.
                     </Text>
                   </Box>
                 </Stack>
@@ -213,16 +214,23 @@ const Home = () => {
               >
                 <Box width={["100%", "45%"]}>
                   <Text>
-                    An official survey by the Nigerian National Bureau of
-                    Statistics (NNBS) done between the years 2018 - 2019, showed
-                    that 39.1% of Nigerians lived below the international
-                    poverty line valued at $1.90 (about N700) per person per
-                    day. We are committed to building sustainable livelihoods
-                    for our beneficiaries through our initiatives. These
-                    initiatives enable our beneficiaries to improve their
-                    standard of living and that of their dependents, contribute
+                    According to the Nigerian National Bureau of Statistics
+                    (NNBS), 39.1% of Nigerians lived below the international
+                    poverty line valued at $1.90 (about N700) per person daily
+                    between the years 2018 - 2019.
+                  </Text>
+
+                  <Text my="1em">
+                    Through our strategic approach, we are committed to helping
+                    our beneficiaries thrive, and improve the outcomes for lives
+                    and livelihoods.
+                  </Text>
+
+                  <Text my="1em">
+                    These initiatives enable our beneficiaries to improve their
+                    standard of living and those of their dependents, contribute
                     to local and national economic growth and reduce the number
-                    of people living in extreme poverty.
+                    of people in extreme poverty.
                   </Text>
                 </Box>
                 <Box width={["100%", "45%"]}>
@@ -275,10 +283,12 @@ const Home = () => {
                 </Box>
                 <Box width={["100%", "45%"]}>
                   <Text mb="1.5em" width={["100%", "90%", "75%"]}>
-                    10% of the world&apos;s population, who struggle to fulfill
-                    their basic needs. Your financial gift enables HardBall to
-                    help millions of people in the developing Young Africas
-                    build better futures.
+                    We are determined to move the needle, but we cannot do it on
+                    our own. We need your support and partnership as we work to
+                    improve the livelihoods of the most vulnerable people.
+                    Whichever way you decide to do it, supporting us means
+                    choosing to help millions of young Africans build better
+                    futures.
                   </Text>
 
                   <Button
@@ -321,10 +331,12 @@ const Home = () => {
               justifyContent="center"
             >
               <Heading color="white" textAlign="center" mb="2">
-                Become A Beneficiary Now
+                Become a beneficiary today.
               </Heading>
               <Center>
-                <Button color="red">Apply Now</Button>
+                <Link to="/beneficiary">
+                  <Button color="red">Apply Now</Button>
+                </Link>
               </Center>
             </Box>
           </Tween>
