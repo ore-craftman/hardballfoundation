@@ -32,13 +32,12 @@ const Team = () => {
               ease="slow(1, 1, false)"
             >
               <Container mx="auto" maxW="container.lg">
-                <Heading color="#ED2123" mb="1em">
-                  About Us
-                </Heading>
                 <Heading color="white">
-                  Hardball Foundation is a non-profit organization set up to
-                  improve the standard of living & general well being of
-                  Nigerians.
+                  <span style={{ color: "#ED2123" }}>Our team</span> is made up
+                  of professionals and experts with diverse backgrounds, broad
+                  range of experience, and technical expertise. We are united in
+                  our goal of enabling sustainable livelihoods for men and women
+                  across Africa.
                 </Heading>
               </Container>
             </Tween>

@@ -97,15 +97,25 @@ const Home = () => {
               ease="slow(1, 1, false)"
             >
               <Box textAlign="center">
-                <Heading fontWeight="bold" fontSize="2em" ref={aboutRef}>
+                <Heading
+                  fontWeight="bold"
+                  fontSize="2em"
+                  ref={aboutRef}
+                  mb="1em"
+                >
                   Who We Are
                 </Heading>
-                <Text width={["98%", "90%", "55%"]} mx="auto">
+                <Text width={["98%", "90%", "55%"]} mx="auto" fontSize="1.3em">
                   Hardball foundation is a non-profit organisation building
                   sustainable livelihoods to reduce economic inequalities
                   through decent work.
                 </Text>
-                <Text mx="auto" w={["98%", "90%", "55%"]} mt="0.5em">
+                <Text
+                  mx="auto"
+                  w={["98%", "90%", "55%"]}
+                  mt="0.8em"
+                  fontSize="1.3em"
+                >
                   Our strategy for building sustainable livelihoods is captured
                   in a three-pronged approach for impact-driven project
                   implementation
