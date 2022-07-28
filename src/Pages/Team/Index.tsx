@@ -12,12 +12,13 @@ const Team = () => {
       <Layout contactRef={contactRefInstance}>
         <Box
           style={{ backgroundImage: "url(/asset/about/hero.svg)" }}
-          minH="70vh"
+          minH="60vh"
           display="flex"
           flexDirection="column"
           alignItems="center"
           justifyContent="center"
           textAlign="center"
+          py="2.5em"
         >
           <ScrollTrigger
             start="-200px center"

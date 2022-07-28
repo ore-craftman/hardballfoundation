@@ -40,14 +40,15 @@ export const Header = ({
           direction={["column", "row"]}
           alignItems="center"
           justifyContent="space-between"
-          width={["100%", "70%"]}
+          width={["100%", "80%", "75%"]}
           display={[displayNav ? "flex" : "none", "flex"]}
           position={["absolute", "static"]}
           top={["5em", "0em"]}
           left={["0em"]}
-          bgColor={["#ffffff55", "transparent"]}
+          bgColor={["#ffffff83", "transparent"]}
           backdropFilter="blur(10px)"
           py={["2em", "0em"]}
+          style={{ zIndex: 10 }}
         >
           <Flex
             alignItems="center"
