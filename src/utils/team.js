@@ -8,7 +8,7 @@ export const team = [
   {
     image: `${IMG_BASE}/ruth.svg`,
     name: "Ruth Adora Otu",
-    role: "Cheif Executive Officer",
+    role: "Chief Executive Officer",
   },
   {
     image: `${IMG_BASE}/eva.svg`,
