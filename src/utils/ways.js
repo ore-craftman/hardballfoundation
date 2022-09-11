@@ -2,16 +2,16 @@ export const ways = [
   {
     title: "Find",
     icon: "/asset/home/find_icon.svg",
-    desc: "We identify prospects from local communities through applications and nominations, and shortlist based on the project's specific requirements.",
+    desc: "We identify ambitious young Africans by applications and nominations from local communities.",
   },
   {
     title: "Fit",
     icon: "/asset/home/fit_icon.svg",
-    desc: "Successful applicants are taken through a rigorous process consisting of several training sessions for building sustainable businesses.",
+    desc: "We take them through a rigorous process that consists of several training sessions that equip them to build sustainable livelihoods.",
   },
   {
     title: "Fund",
     icon: "/asset/home/fund_icon.svg",
-    desc: "Candidates who scale through the Find and Fit stages satisfactorily become beneficiaries of general or case-specific funding and technical support for their businesses.",
+    desc: "We provide financial and technical support to help them build sustainable livelihoods.",
   },
 ];

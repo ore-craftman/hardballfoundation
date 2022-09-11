@@ -21,8 +21,8 @@ export const team = [
     role: "Program Director- DWI",
   },
   {
-    image: `${IMG_BASE}/koye.svg`,
-    name: "Adekoye Gbadebo",
+    image: `${IMG_BASE}/lily.svg`,
+    name: "Lily Adimefe",
     role: "Media & Commmunications",
   },
   // {

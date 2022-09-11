@@ -89,8 +89,9 @@ export const Header = ({
             <Button
               colorScheme="red"
               variant="outline"
-              color="black"
+              color="#fff"
               borderColor="#ED2123"
+              bgColor="#ED2123"
               my={["0.4em", "0em"]}
             >
               Donate

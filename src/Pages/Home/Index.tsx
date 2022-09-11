@@ -22,7 +22,12 @@ const Home = () => {
   return (
     <>
       <Layout contactRef={contactRefInstance}>
-        <Container maxW="container.xl" mx="auto" py="2em">
+        <Box
+          backgroundImage="url('/asset/home/hero.svg')"
+          height="75vh"
+          display="flex"
+          alignItems="center"
+        >
           <ScrollTrigger
             start="-200px center"
             end="200px center"
@@ -35,55 +40,21 @@ const Home = () => {
               stagger={0.5}
               ease="slow(1, 1, false)"
             >
-              <Stack
-                direction={["column", "row"]}
-                justifyContent="space-between"
-                alignItems="center"
-                pb="2em"
+              <Heading
+                as="h2"
+                fontSize={["2.5em", "3em", "4em"]}
+                fontWeight="bold"
+                mb="1.5em"
+                color="#fff"
+                width={["100%", "80%", "70%"]}
               >
-                <Box width={["100%", "50%"]}>
-                  <Heading
-                    as="h2"
-                    fontSize={["2.5em", "3em", "4em"]}
-                    fontWeight="bold"
-                    mb="1.5em"
-                  >
-                    Building sustainable livelihoods for{" "}
-                    <span style={{ color: "#ED2123" }}>African Youths.</span>
-                  </Heading>
-
-                  <Box
-                    width="5em"
-                    height="5em"
-                    display="flex"
-                    borderRadius="2.5em"
-                    justifyContent="center"
-                    alignItems="center"
-                    bgGradient="linear(152.48deg, rgba(237, 33, 35, 0.97) 8.91%, #B30A0C 108.38%)"
-                    color="white"
-                    fontSize="13px"
-                    fontWeight="medium"
-                    cursor="pointer"
-                    // @ts-ignore
-                    onClick={() => aboutRef.current.scrollIntoView()}
-                  >
-                    <Text>
-                      Sroll <br /> Down
-                    </Text>
-                  </Box>
-                </Box>
-                <Box>
-                  <Image
-                    src="/asset/home/hero.svg"
-                    alt="hardball foundation"
-                    objectFit="contain"
-                    mt={["-1em", "-3em", "-4em"]}
-                  />
-                </Box>
-              </Stack>
+                Building sustainable Livelihoods for African Youths.
+              </Heading>
             </Tween>
           </ScrollTrigger>
+        </Box>
 
+        <Container maxW="container.xl" mx="auto" py="2em">
           <ScrollTrigger
             start="-200px center"
             end="200px center"
@@ -108,7 +79,10 @@ const Home = () => {
                 <Text width={["98%", "90%", "55%"]} mx="auto" fontSize="1.3em">
                   Hardball foundation is a non-profit organisation building
                   sustainable livelihoods to reduce economic inequalities
-                  through decent work.
+                  through decent work. Our programs and initiatives align with
+                  the United Nations Sustainable Development Goal (SDG) 8, which
+                  promotes sustained inclusive and sustainable economic growth,
+                  full and productive employment, and decent work for all.
                 </Text>
                 <Text
                   mx="auto"
@@ -173,20 +147,25 @@ const Home = () => {
                   <Box width={["100%", "48%", "40%"]}>
                     <Heading color="#ED2123">Our Vision</Heading>
                     <Text>
-                      Building sustainable livelihoods to reduce economic
+                      {/* Building sustainable livelihoods to reduce economic
                       inequalities. <br /> Our programmes and initiatives are in
                       line with the United Nations Sustainable Development Goal
                       Eight (SDG8) which is to promote sustained, inclusive and
                       sustainable economic growth, full and productive
-                      employment and decent work for all.
+                      employment and decent work for all. */}
+                      We are building sustainable livelihoods to reduce economic
+                      inequalities.
                     </Text>
                   </Box>
                   <Box width={["100%", "48%", "30%"]} textAlign="right">
                     <Heading color="#ED2123">Our Mission</Heading>
                     <Text>
-                      To transform the lives and livelihoods of 10,000
+                      {/* To transform the lives and livelihoods of 10,000
                       beneficiaries by 2032, through providing access to
-                      training and funding to build a sustainable income.
+                      training and funding to build a sustainable income. */}
+                      To transform the lives of 10,000 beneficiaries, providing
+                      access to training and funding to build a sustainable
+                      income by 2032.
                     </Text>
                   </Box>
                 </Stack>

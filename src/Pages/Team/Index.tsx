@@ -59,7 +59,7 @@ const Team = () => {
           >
             <Container mx="auto" maxW="container.xl" my="4em">
               <Heading textAlign="center" mb="1.5em">
-                Meet Our Team
+                Our Team
               </Heading>
               <Flex flexWrap={["wrap", "nowrap"]} mx="auto" my="1em">
                 {team.map((person, i) => {
