@@ -24,34 +24,36 @@ const Home = () => {
       <Layout contactRef={contactRefInstance}>
         <Box
           backgroundImage="url('/asset/home/hero.svg')"
-          height="75vh"
+          height="80vh"
           display="flex"
           alignItems="center"
         >
-          <ScrollTrigger
-            start="-200px center"
-            end="200px center"
-            once={true}
-            scrub={0.5}
-          >
-            <Tween
-              from={{ y: -20, opacity: 0 }}
-              to={{ y: 0, opacity: 1, duration: 2 }}
-              stagger={0.5}
-              ease="slow(1, 1, false)"
+          <Container maxW="container.xl" mx="auto" px="1em">
+            <ScrollTrigger
+              start="-200px center"
+              end="200px center"
+              once={true}
+              scrub={0.5}
             >
-              <Heading
-                as="h2"
-                fontSize={["2.5em", "3em", "4em"]}
-                fontWeight="bold"
-                mb="1.5em"
-                color="#fff"
-                width={["100%", "80%", "70%"]}
+              <Tween
+                from={{ y: -20, opacity: 0 }}
+                to={{ y: 0, opacity: 1, duration: 2 }}
+                stagger={0.5}
+                ease="slow(1, 1, false)"
               >
-                Building sustainable Livelihoods for African Youths.
-              </Heading>
-            </Tween>
-          </ScrollTrigger>
+                <Heading
+                  as="h2"
+                  fontSize={["2.5em", "3em", "5em"]}
+                  fontWeight="bold"
+                  mb="1.5em"
+                  color="#fff"
+                  width={["100%", "80%", "70%"]}
+                >
+                  Building sustainable Livelihoods for African Youths.
+                </Heading>
+              </Tween>
+            </ScrollTrigger>
+          </Container>
         </Box>
 
         <Container maxW="container.xl" mx="auto" py="2em">
@@ -76,18 +78,27 @@ const Home = () => {
                 >
                   Who We Are
                 </Heading>
-                <Text width={["98%", "90%", "55%"]} mx="auto" fontSize="1.3em">
+                <Text width={["98%", "90%", "70%"]} mx="auto" fontSize="1.3em">
                   Hardball foundation is a non-profit organisation building
                   sustainable livelihoods to reduce economic inequalities
-                  through decent work. Our programs and initiatives align with
-                  the United Nations Sustainable Development Goal (SDG) 8, which
-                  promotes sustained inclusive and sustainable economic growth,
-                  full and productive employment, and decent work for all.
+                  through decent work.
+                </Text>
+
+                <Text
+                  width={["98%", "90%", "70%"]}
+                  mx="auto"
+                  fontSize="1.3em"
+                  my="1em"
+                >
+                  Our programs and initiatives align with the United Nations
+                  Sustainable Development Goal (SDG) 8, which promotes sustained
+                  inclusive and sustainable economic growth, full and productive
+                  employment, and decent work for all.
                 </Text>
                 <Text
                   mx="auto"
-                  w={["98%", "90%", "55%"]}
-                  mt="0.8em"
+                  w={["98%", "90%", "70%"]}
+                  // mt="0.8em"
                   fontSize="1.3em"
                 >
                   Our strategy for building sustainable livelihoods is captured
@@ -141,12 +152,14 @@ const Home = () => {
                 <Stack
                   direction={["column", "row"]}
                   justifyContent="space-between"
-                  alignItems="center"
+                  alignItems="flex-start"
                   color="white"
                 >
                   <Box width={["100%", "48%", "40%"]}>
-                    <Heading color="#ED2123">Our Vision</Heading>
-                    <Text>
+                    <Heading color="#ED2123" fontSize="3em" mb="0.5em">
+                      Our Vision
+                    </Heading>
+                    <Text fontSize="1.4em">
                       {/* Building sustainable livelihoods to reduce economic
                       inequalities. <br /> Our programmes and initiatives are in
                       line with the United Nations Sustainable Development Goal
@@ -158,14 +171,16 @@ const Home = () => {
                     </Text>
                   </Box>
                   <Box width={["100%", "48%", "30%"]} textAlign="right">
-                    <Heading color="#ED2123">Our Mission</Heading>
-                    <Text>
+                    <Heading color="#ED2123" fontSize="3em" mb="0.5em">
+                      Our Mission
+                    </Heading>
+                    <Text fontSize="1.4em">
                       {/* To transform the lives and livelihoods of 10,000
                       beneficiaries by 2032, through providing access to
                       training and funding to build a sustainable income. */}
-                      To transform the lives of 10,000 beneficiaries, providing
-                      access to training and funding to build a sustainable
-                      income by 2032.
+                      To transform the lives of 10,00 beneficiaries by 2023, by
+                      providing access to training and funding to build a
+                      sustainable income.
                     </Text>
                   </Box>
                 </Stack>
@@ -187,14 +202,6 @@ const Home = () => {
             ease="slow(1, 1, false)"
           >
             <Container maxW="container.xl" mx="auto" py="4em">
-              <Heading
-                fontWeight="bold"
-                fontSize="2em"
-                mb="1.5em"
-                textAlign="center"
-              >
-                Our Work
-              </Heading>
               <Stack
                 direction={["column", "row"]}
                 justifyContent="space-between"
@@ -202,20 +209,23 @@ const Home = () => {
                 pb="2em"
               >
                 <Box width={["100%", "45%"]}>
-                  <Text>
+                  <Heading fontWeight="bold" fontSize="3em" mb="1.5em">
+                    Our Work
+                  </Heading>
+                  <Text fontSize="1.2em" fontWeight="bold">
                     According to the Nigerian National Bureau of Statistics
                     (NNBS), 39.1% of Nigerians lived below the international
                     poverty line valued at $1.90 (about N700) per person daily
                     between the years 2018 - 2019.
                   </Text>
 
-                  <Text my="1em">
+                  <Text my="1em" fontSize="1.2em">
                     Through our strategic approach, we are committed to helping
                     our beneficiaries thrive, and improve the outcomes for lives
                     and livelihoods.
                   </Text>
 
-                  <Text my="1em">
+                  <Text my="1em" fontSize="1.2em">
                     These initiatives enable our beneficiaries to improve their
                     standard of living and those of their dependents, contribute
                     to local and national economic growth and reduce the number
@@ -247,14 +257,6 @@ const Home = () => {
             ease="slow(1, 1, false)"
           >
             <Container maxW="container.xl" mx="auto" py="4em">
-              <Heading
-                fontWeight="bold"
-                fontSize="2em"
-                mb="1.5em"
-                textAlign="center"
-              >
-                Make a Difference
-              </Heading>
               <Stack
                 direction={["column", "row"]}
                 justifyContent="space-between"
@@ -271,7 +273,21 @@ const Home = () => {
                   />
                 </Box>
                 <Box width={["100%", "45%"]}>
-                  <Text mb="1.5em" width={["100%", "90%", "75%"]}>
+                  <Heading
+                    fontWeight="bold"
+                    fontSize="3em"
+                    mb=".8em"
+                    textAlign="right"
+                    width={["100%", "90%"]}
+                  >
+                    Make a Difference
+                  </Heading>
+                  <Text
+                    mb="1.5em"
+                    fontSize="1.2em"
+                    width={["100%", "90%"]}
+                    textAlign="right"
+                  >
                     We are determined to move the needle, but we cannot do it on
                     our own. We need your support and partnership as we work to
                     improve the livelihoods of the most vulnerable people.
@@ -280,19 +296,25 @@ const Home = () => {
                     futures.
                   </Text>
 
-                  <Button
-                    colorScheme="red"
-                    bgColor="#ED2123"
-                    my={["0.4em", "0em"]}
+                  <Box
+                    display="flex"
+                    justifyContent="flex-end"
+                    width={["100%", "90%"]}
                   >
-                    <a
-                      href="https://paystack.com/pay/hardballfoundation"
-                      target="_blank"
-                      rel="noreferrer"
+                    <Button
+                      colorScheme="red"
+                      bgColor="#ED2123"
+                      my={["0.4em", "0em"]}
                     >
-                      Donate Now
-                    </a>
-                  </Button>
+                      <a
+                        href="https://paystack.com/pay/hardballfoundation"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Donate Now
+                      </a>
+                    </Button>
+                  </Box>
                 </Box>
               </Stack>
             </Container>
@@ -319,7 +341,12 @@ const Home = () => {
               alignItems="center"
               justifyContent="center"
             >
-              <Heading color="white" textAlign="center" mb="2">
+              <Heading
+                color="white"
+                textAlign="center"
+                fontSize="3em"
+                mb=".8em"
+              >
                 Become a beneficiary today.
               </Heading>
               <Center>
