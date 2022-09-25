@@ -24,7 +24,10 @@ const Home = () => {
       <Layout contactRef={contactRefInstance}>
         <Box
           backgroundImage="url('/asset/home/hero.svg')"
-          height="80vh"
+          backgroundPosition={["left bottom", "center center"]}
+          backgroundSize={["100vh", "100%"]}
+          backgroundRepeat="no-repeat"
+          height={["50vh", "85vh"]}
           display="flex"
           alignItems="center"
         >
@@ -43,9 +46,10 @@ const Home = () => {
               >
                 <Heading
                   as="h2"
-                  fontSize={["2.5em", "3em", "5em"]}
+                  fontSize={["2.4em", "2.5em", "5em"]}
                   fontWeight="bold"
-                  mb="1.5em"
+                  // mb="1.5em"
+                  // my={["0em", "1em", "0em"]}
                   color="#fff"
                   width={["100%", "80%", "70%"]}
                 >
@@ -340,6 +344,7 @@ const Home = () => {
               flexDirection="column"
               alignItems="center"
               justifyContent="center"
+              py={["1em"]}
             >
               <Heading
                 color="white"
